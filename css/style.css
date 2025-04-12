@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "Robot";
+    src: url("Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+  
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+
+
+#container {
+    min-height: 100vh;
+}
+
+#main {
+   overflow: auto; 
+}
+
+/*nav start */
+
+
+#VidAF {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    right: 45%;
+    top: -50px;
+  }
+
+header {
+    width: 100%;
+    background-color: #003049;
+    place-items: center;
+}
+
+nav {    
+    width: 100%;
+    height: 35vh;
+    background-color: #003049;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    place-items: center;
+}
+      
+nav li {
+    bottom: -150px;
+    position: relative;
+    padding-right: 250px;
+    margin: 40px 0px 10px 0px;
+    display: inline-block;
+}
+     
+nav a {
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    display: block;
+    padding: 55px 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Valorant";
+    text-align: center; 
+}
+/*End nav*/
+
+/*main Start*/
+
+.containerBody {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-Video {
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-Video h1 {
+    position: absolute;
+    top: 10px;
+    padding-top: 25px;
+    font-family: "Valorant";
+    font-size: 35px;
+    color: #16404D;
+}
+
+.clients {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background-color: #A6CDC6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(181,221,213);
+    background: linear-gradient(31deg, rgba(181,221,213,1) 21%, rgba(161,204,196,1) 53%, rgba(91,195,176,1) 68%);
+}
+
+.carouselWrapper {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    max-width: 4000px;
+    margin-inline: auto;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+        );
+} 
+
+@keyframes scrollleft {   
+   to{
+    left: -600px;
+   }
+}
+
+.item {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 6px;
+    left: max(calc(400px * 8), 100%);
+    animation-name: scrollleft;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(80s / 5 * (5 - 1) * -1);
+} 
+
+.item2 {
+    animation-delay: calc(80s / 5 * (5 - 2) * -1);
+} 
+
+.item3 {
+    animation-delay: calc(80s / 5 * (5 - 3) * -1);
+} 
+
+.item4 {
+    animation-delay: calc(80s / 5 * (5 - 4) * -1);
+} 
+
+.item5 {
+    animation-delay: calc(80s / 5 * (5 - 5) * -1);
+} 
+
+.clientsTitle, .missionTitle {
+    position: absolute;
+    top: 10px;
+    padding-top: 25px;
+    font-family: "Valorant";
+    font-size: 35px;
+    color: #16404D;
+
+}
+
+.item img {
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+
+.mission {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: rgb(251,245,221);
+    background: linear-gradient(100deg, rgba(251,245,221,1) 12%, rgba(226,220,196,1) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-36 {
+    position: absolute;
+    bottom: 100px;
+  background-image: linear-gradient(92.88deg, #16404D 9.16%, #16404D 43.89%, #16404D 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --size: 20px;
+  }
+  
+ 
+  .el {
+    background: conic-gradient(from 180deg at 50% 70%,hsla(0,0%,98%,1) 0deg,#eec32d 72.0000010728836deg,#ec4b4b 144.0000021457672deg,#709ab9 216.00000858306885deg,#4dffbf 288.0000042915344deg,hsla(0,0%,98%,1) 1turn);
+    width: 100%;
+    height: 100%;
+    mask:
+      radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
+      url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+    mask-composite: intersect;
+    animation: flicker 20s infinite linear;
+    position: relative;
+  }
+
+  @keyframes flicker {
+    to {
+      mask-position: 50% 50%, 0 50%;
+    }
+  }
+
+  .paragraphM1 {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    font-family: "Robot";
+    font-size: 40px;
+    top: 150px;
+  }
+
+  .Hboxer1, .Hboxer2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  .Hboxer1 {
+    right: 68%;
+    background-image: url(PropertyManagment.jpg);
+    background-size: cover;
+  }
+  
+  .Hboxer1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    background-image: url(MedicalPract.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 600ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .Hboxer1:hover::before,
+  .Hboxer1:focus::before {
+    transform: scaleX(1);
+  }
+
+  .Hboxer2 {
+    z-index: 1;
+  }
+  
+  .Hboxer2 {
+    right: 10%;
+    background-image: url(MedicalPract.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Hboxer2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    background-image: url(PropertyManagment.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 600ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  .Hboxer2:hover::before,
+  .Hboxer2:focus::before {
+    transform: scaleX(1);
+  }
+
+  .Hboxer2 {
+    z-index: 1;
+  }
+
+.Specialization {
+    width: 100%;
+    height: 80vh;
+    background-color: #16404D;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.box-element1, .box-element2  {
+    width: 45%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paragraphM2 {
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    font-family: "Robot";
+    font-size: 20px;
+    top: 150px;
+    
+}
+
+
+.box-element2 {
+    background-color: #16404D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    object-fit: cover;
+}
+.InsuranceAgency, .MedicalPractice, .BillingAndCoding, .PropertyManagement {
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    border-radius: 15px;
+
+}
+
+.BillingAndCoding img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0.2;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.InsuranceAgency img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0.2;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.MedicalPractice img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0.2;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+
+.PropertyManagement img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0.2;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.BillingAndCoding, .InsuranceAgency, .MedicalPractice, .PropertyManagement {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.BillingAndCoding h5, .InsuranceAgency h5, .MedicalPractice h5, .PropertyManagement h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px 10px 30px;
+    color: #FFFFFF;
+}
+
+
+
+ /*End main*/
+
+
+/*footer start*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #003049;
+    padding: 3em;
+    clear: both;
+}
+/*End footer*/
